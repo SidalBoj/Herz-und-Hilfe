@@ -1,0 +1,706 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap');
+
+
+:root {
+
+    --blau:#173A63;
+    --gruen:#8AA58A;
+    --gruen-hell:#E7EFE5;
+    --beige:#F8F5EF;
+    --text:#444;
+    --grau:#6B6F72;
+
+}
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+
+body{
+
+    font-family:'Manrope',sans-serif;
+    color:var(--text);
+    line-height:1.7;
+    background:white;
+
+}
+
+
+
+h1,h2,h3{
+
+    font-family:'Poppins',sans-serif;
+    color:var(--blau);
+
+}
+
+
+
+section{
+
+    padding:100px 10%;
+
+}
+
+
+
+
+
+/* =====================
+   HEADER
+===================== */
+
+
+header{
+
+    position:fixed;
+    top:0;
+    width:100%;
+    background:white;
+    z-index:1000;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+
+}
+
+
+
+nav{
+
+    max-width:1200px;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 30px;
+
+}
+
+
+
+.logo img{
+
+    height:70px;
+
+}
+
+
+
+nav ul{
+
+    display:flex;
+    gap:35px;
+    list-style:none;
+
+}
+
+
+
+nav a{
+
+    color:var(--blau);
+    text-decoration:none;
+    font-weight:600;
+
+}
+
+
+
+nav a:hover{
+
+    color:var(--gruen);
+
+}
+
+
+
+.menu-button{
+
+    display:none;
+
+}
+
+
+
+
+
+/* =====================
+   HERO
+===================== */
+
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+
+
+    background:
+
+    linear-gradient(
+    90deg,
+    rgba(248,245,239,.96),
+    rgba(248,245,239,.35)
+    ),
+
+    url("bilder/startbild.jpg");
+
+
+    background-size:cover;
+    background-position:center;
+
+}
+
+
+
+.hero-text{
+
+    max-width:620px;
+
+}
+
+
+
+.hero h1{
+
+    font-size:clamp(2.8rem,5vw,4.5rem);
+
+    line-height:1.15;
+
+}
+
+
+
+.hero p{
+
+    font-size:1.2rem;
+
+    margin:30px 0;
+
+}
+
+
+
+.button{
+
+    display:inline-block;
+
+    background:var(--gruen);
+
+    color:white;
+
+    padding:16px 40px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+
+
+
+
+/* =====================
+   ÜBERSCHRIFTEN
+===================== */
+
+
+h2{
+
+    text-align:center;
+
+    font-size:2.6rem;
+
+    margin-bottom:60px;
+
+}
+
+
+
+h2:after{
+
+    content:"";
+
+    display:block;
+
+    width:70px;
+
+    height:3px;
+
+    background:var(--gruen);
+
+    margin:18px auto;
+
+}
+
+
+
+.gross{
+
+    font-size:1.25rem;
+
+    font-weight:600;
+
+    color:var(--blau);
+
+}
+
+
+
+
+
+/* =====================
+   VERTRAUENSPUNKTE
+===================== */
+
+
+.vertrauen{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:40px;
+
+    text-align:center;
+
+    padding-top:70px;
+
+    padding-bottom:70px;
+
+}
+
+
+
+.vertrauen-punkt{
+
+    position:relative;
+
+}
+
+
+
+.vertrauen-punkt:not(:last-child)::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:-20px;
+
+    top:20px;
+
+    height:80px;
+
+    width:1px;
+
+    background:#d8e2d5;
+
+}
+
+
+
+.icon{
+
+    width:60px;
+
+    height:60px;
+
+    border:2px solid var(--gruen);
+
+    color:var(--gruen);
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:0 auto 20px;
+
+    font-size:28px;
+
+}
+
+
+
+.vertrauen h3{
+
+    font-size:1.1rem;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.vertrauen p{
+
+    color:var(--grau);
+
+}
+
+
+
+
+
+/* =====================
+   ÜBER UNS
+===================== */
+
+
+.ueber-intro{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+
+
+.gruenderin img{
+
+    width:100%;
+
+    max-width:420px;
+
+    border-radius:35px;
+
+}
+
+
+
+.zitat{
+
+    margin-top:25px;
+
+    color:var(--blau);
+
+    font-style:italic;
+
+}
+
+
+
+
+
+.werte-neu{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:40px;
+
+}
+
+
+
+.werte-neu div{
+
+    border-top:3px solid var(--gruen);
+
+    padding-top:20px;
+
+}
+
+
+
+
+
+/* =====================
+   ANGEHÖRIGE
+===================== */
+
+
+.gruener-bereich{
+
+    background:var(--gruen-hell);
+
+}
+
+
+
+.angehoerige-text{
+
+    max-width:800px;
+
+    margin:auto;
+
+}
+
+
+
+.angehoerige-text ul{
+
+    list-style:none;
+
+    margin-top:30px;
+
+}
+
+
+
+.angehoerige-text li{
+
+    padding:15px 0;
+
+    border-bottom:1px solid rgba(23,58,99,.15);
+
+}
+
+
+
+.angehoerige-text li:before{
+
+    content:"✓";
+
+    color:var(--gruen);
+
+    font-weight:bold;
+
+    margin-right:15px;
+
+}
+
+
+
+
+
+/* =====================
+   LEISTUNGEN
+===================== */
+
+
+.leistungen-liste{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+
+
+.leistungen-liste div{
+
+    padding:35px 0;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+
+
+.leistungen-liste h3{
+
+    color:var(--gruen);
+
+    margin-bottom:10px;
+
+}
+
+
+
+
+
+/* =====================
+   KONTAKT
+===================== */
+
+
+.kontakt-text{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+
+
+form{
+
+    max-width:600px;
+
+    margin:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+
+
+input,
+textarea{
+
+    padding:18px;
+
+    border-radius:15px;
+
+    border:1px solid #ddd;
+
+    font-family:inherit;
+
+}
+
+
+
+textarea{
+
+    height:150px;
+
+}
+
+
+
+button{
+
+    background:var(--blau);
+
+    color:white;
+
+    border:none;
+
+    padding:16px;
+
+    border-radius:30px;
+
+}
+
+
+
+
+
+/* =====================
+   FOOTER
+===================== */
+
+
+footer{
+
+    background:var(--blau);
+
+    color:white;
+
+    text-align:center;
+
+    padding:35px;
+
+}
+
+
+
+
+
+/* =====================
+   MOBILE
+===================== */
+
+
+@media(max-width:900px){
+
+
+nav ul{
+
+    display:none;
+
+    position:absolute;
+
+    top:90px;
+
+    right:20px;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+}
+
+
+
+nav ul.aktiv{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+
+.menu-button{
+
+    display:block;
+
+    background:none;
+
+    border:none;
+
+    font-size:30px;
+
+}
+
+
+
+.vertrauen{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.vertrauen-punkt:not(:last-child)::after{
+
+    display:none;
+
+}
+
+
+
+.ueber-intro,
+.werte-neu{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.hero h1{
+
+    font-size:2.5rem;
+
+}
+
+
+}
