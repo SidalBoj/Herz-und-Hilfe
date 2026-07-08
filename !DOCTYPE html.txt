@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Herz & Hilfe – Betreuung mit Herz</title>
+
+<meta name="description" content="Herz & Hilfe unterstützt Familien bei der Suche nach liebevoller Betreuung zuhause.">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<nav>
+
+<div class="logo">
+<img src="bilder/logo.png" alt="Herz & Hilfe Logo">
+</div>
+
+
+<button class="menu-button" id="menuButton">
+☰
+</button>
+
+
+<ul id="navMenu">
+<li><a href="#start">Startseite</a></li>
+<li><a href="#vorwort">Vorwort</a></li>
+<li><a href="#ueber-uns">Über Herz & Hilfe</a></li>
+<li><a href="#angehoerige">Für Angehörige</a></li>
+<li><a href="#leistungen">Leistungen</a></li>
+<li><a href="#kontakt">Kontakt</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+
+
+<section id="start" class="hero">
+
+<div class="hero-text">
+
+<h1>
+Weil Zuhause der schönste Ort ist.
+</h1>
+
+<p>
+Liebevolle Betreuung und persönliche Unterstützung
+für Menschen, die ihr vertrautes Zuhause bewahren möchten.
+</p>
+
+<a href="#kontakt" class="button">
+Kostenlose Beratung
+</a>
+
+</div>
+
+</section>
+
+
+
+<section id="vorwort">
+
+<h2>Vorwort</h2>
+
+<p>
+Herzlich willkommen bei Herz & Hilfe.
+</p>
+
+<p>
+Jeder Mensch wünscht sich, seinen Lebensabend in vertrauter Umgebung verbringen zu dürfen.
+</p>
+
+<p>
+Wir unterstützen Menschen und Familien dabei,
+eine liebevolle und passende Betreuungslösung zu finden.
+Dabei stehen Vertrauen, Respekt und Menschlichkeit im Mittelpunkt.
+</p>
+
+</section>
+
+
+
+
+<section id="ueber-uns">
+
+<h2>Über Herz & Hilfe</h2>
+
+
+<div class="two-columns">
+
+
+<div class="gruenderin">
+
+<img src="bilder/gruenderin.jpg" alt="Gründerin">
+
+<h3>Die Gründerin</h3>
+
+<p>
+Hinter Herz & Hilfe steht die Überzeugung,
+dass Betreuung mehr bedeutet als Unterstützung im Alltag.
+</p>
+
+<p>
+Wir möchten Menschen Sicherheit geben
+und ihnen ein selbstbestimmtes Leben zuhause ermöglichen.
+</p>
+
+</div>
+
+
+
+<div class="philosophie">
+
+<h3>Unsere Philosophie</h3>
+
+<p>
+Der Mensch steht bei uns im Mittelpunkt.
+</p>
+
+
+<div class="werte">
+
+
+<div class="wert">
+<h4>❤️ Menschlichkeit</h4>
+<p>Betreuung mit Herz und Respekt.</p>
+</div>
+
+
+<div class="wert">
+<h4>🏡 Zuhause</h4>
+<p>Vertraute Umgebung und Sicherheit.</p>
+</div>
+
+
+<div class="wert">
+<h4>🤝 Vertrauen</h4>
+<p>Ehrliche und persönliche Zusammenarbeit.</p>
+</div>
+
+
+<div class="wert">
+<h4>🌿 Qualität</h4>
+<p>Zuverlässige Begleitung.</p>
+</div>
+
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+<section id="angehoerige">
+
+<h2>Für Angehörige</h2>
+
+<p>
+Wir begleiten Angehörige bei der Suche nach einer passenden Betreuung
+und unterstützen bei jedem Schritt.
+</p>
+
+
+<div class="cards">
+
+
+<div class="card">
+<h3>Beratung</h3>
+<p>Persönliche Unterstützung für Ihre Situation.</p>
+</div>
+
+
+<div class="card">
+<h3>Organisation</h3>
+<p>Hilfe bei Planung und Vermittlung.</p>
+</div>
+
+
+<div class="card">
+<h3>Begleitung</h3>
+<p>Wir bleiben Ansprechpartner.</p>
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+<section id="leistungen">
+
+<h2>Leistungen</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+<h3>24-Stunden-Betreuung</h3>
+<p>Betreuung im vertrauten Zuhause.</p>
+</div>
+
+
+<div class="card">
+<h3>Vermittlung</h3>
+<p>Suche nach geeigneten Betreuungskräften.</p>
+</div>
+
+
+<div class="card">
+<h3>Beratung</h3>
+<p>Individuelle Lösungen für Familien.</p>
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<section id="kontakt">
+
+<h2>Kontakt</h2>
+
+
+<form>
+
+<input type="text" placeholder="Name">
+
+<input type="email" placeholder="E-Mail">
+
+<textarea placeholder="Ihre Nachricht"></textarea>
+
+<button>
+Nachricht senden
+</button>
+
+</form>
+
+
+<p class="kontakt-daten">
+Telefon: Ihre Telefonnummer<br>
+E-Mail: Ihre E-Mail-Adresse
+</p>
+
+
+</section>
+
+
+
+
+<a href="tel:+49123456789" class="telefon-button">
+📞
+</a>
+
+
+
+<footer>
+
+<p>
+© Herz & Hilfe | Impressum | Datenschutz
+</p>
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
