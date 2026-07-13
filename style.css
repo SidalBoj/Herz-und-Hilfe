@@ -112,9 +112,15 @@ width:50px;
 
 font-family:"Cormorant Garamond",serif;
 color:var(--primary);
-font-size:34px;
+font-size:26px;
 
 }
+
+.logo span{
+
+display:block;
+font-size:14px;
+color:var(--secondary);
 
 nav ul{
 
