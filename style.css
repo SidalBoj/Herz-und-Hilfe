@@ -1,0 +1,384 @@
+/* Farben */
+
+:root{
+
+--primary:#1F3A5F;
+--secondary:#A8C3A1;
+--background:#FAF8F5;
+--white:#ffffff;
+--text:#3C3C3C;
+--light:#ECE8E2;
+
+}
+
+/* Reset */
+
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+background:var(--background);
+
+color:var(--text);
+
+font-family:'Inter',sans-serif;
+
+line-height:1.8;
+
+}
+
+/* Container */
+
+.container{
+
+width:90%;
+
+max-width:1200px;
+
+margin:auto;
+
+}
+
+/* Navigation */
+
+header{
+
+position:fixed;
+
+width:100%;
+
+background:rgba(255,255,255,.95);
+
+backdrop-filter:blur(8px);
+
+z-index:1000;
+
+box-shadow:0 2px 10px rgba(0,0,0,.05);
+
+}
+
+header .container{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:20px 0;
+
+}
+
+nav ul{
+
+display:flex;
+
+list-style:none;
+
+gap:40px;
+
+}
+
+nav a{
+
+color:var(--primary);
+
+text-decoration:none;
+
+font-weight:500;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:var(--secondary);
+
+}
+
+/* Hero */
+
+.hero{
+
+height:100vh;
+
+background:url(images/hero.jpg) center center/cover no-repeat;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+position:relative;
+
+}
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background:rgba(0,0,0,.30);
+
+}
+
+.hero-content{
+
+position:relative;
+
+color:white;
+
+max-width:800px;
+
+}
+
+.hero h1{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:72px;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:22px;
+
+}
+
+/* Bereiche */
+
+section{
+
+padding:120px 0;
+
+}
+
+section h2{
+
+text-align:center;
+
+color:var(--primary);
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:48px;
+
+margin-bottom:50px;
+
+}
+
+/* Karten */
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+}
+
+.card{
+
+background:white;
+
+padding:40px;
+
+border-radius:18px;
+
+transition:.4s;
+
+box-shadow:0 8px 25px rgba(0,0,0,.05);
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.card h3{
+
+color:var(--primary);
+
+margin-bottom:15px;
+
+}
+
+/* Werte */
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:40px;
+
+}
+
+.grid div{
+
+background:white;
+
+padding:40px;
+
+border-radius:18px;
+
+}
+
+/* Ablauf */
+
+.steps ol{
+
+max-width:700px;
+
+margin:auto;
+
+font-size:22px;
+
+}
+
+.steps li{
+
+margin:20px 0;
+
+}
+
+/* Kontakt */
+
+.contact{
+
+background:var(--light);
+
+text-align:center;
+
+}
+
+.contact p{
+
+margin:12px 0;
+
+font-size:20px;
+
+}
+
+/* Footer */
+
+footer{
+
+background:var(--primary);
+
+color:white;
+
+text-align:center;
+
+padding:50px;
+
+}
+
+footer img{
+
+width:90px;
+
+margin-bottom:20px;
+
+}
+
+footer small{
+
+display:block;
+
+margin-top:20px;
+
+opacity:.8;
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.hero h1{
+
+font-size:48px;
+
+}
+
+.grid{
+
+grid-template-columns:1fr;
+
+}
+
+nav ul{
+
+gap:20px;
+
+font-size:15px;
+
+}
+
+}
+
+@media(max-width:700px){
+
+header .container{
+
+flex-direction:column;
+
+}
+
+nav ul{
+
+flex-direction:column;
+
+align-items:center;
+
+margin-top:20px;
+
+}
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+section{
+
+padding:80px 0;
+
+}
+
+} 
