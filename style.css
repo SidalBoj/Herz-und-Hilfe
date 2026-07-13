@@ -50,7 +50,7 @@ line-height:1.8;
 
 width:90%;
 max-width:1200px;
-margin:auto;
+margin:auto;/
 
 }
 
@@ -104,16 +104,21 @@ gap:15px;
 
 .logo img{
 
-width:50px;
+width:55px;
 
+.logo-text{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  
 }
 
 .logo h2{
 
 font-family:"Cormorant Garamond",serif;
 color:var(--primary);
-font-size:26px;
-
+font-size:30px;
+/
 }
 
 .logo span{
