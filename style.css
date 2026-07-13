@@ -1,0 +1,315 @@
+/* ===================================
+HERZ & HILFE PFLEGEVERMITTLUNG
+Premium Design
+=================================== */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Farben */
+:root{
+
+--primary:#1F3A5F;
+--secondary:#A8C3A1;
+--secondary-dark:#7E9B76;
+--secondary-light:#DDE8D8;
+
+--background:#FAF8F5;
+--white:#FFFFFF;
+--light:#F3F0EC;
+--text:#444444;
+
+--shadow:0 12px 35px rgba(0,0,0,.08);
+
+}
+
+/* Reset */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:"Inter",sans-serif;
+background:var(--background);
+color:var(--text);
+line-height:1.8;
+
+}
+
+/* Container */
+
+.container{
+
+width:90%;
+max-width:1200px;
+margin:auto;
+
+}
+
+/* ==========================
+HEADER
+========================== */
+
+header{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+
+background:rgba(255,255,255,.94);
+
+backdrop-filter:blur(12px);
+
+z-index:999;
+
+transition:.35s;
+
+}
+
+header.scrolled{
+
+box-shadow:var(--shadow);
+background:rgba(255,255,255,.98);
+
+}
+
+header .container{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:18px 0;
+
+}
+
+.logo{
+
+display:flex;
+align-items:center;
+gap:15px;
+
+}
+
+.logo img{
+
+width:65px;
+
+}
+
+.logo h2{
+
+font-family:"Cormorant Garamond",serif;
+color:var(--primary);
+font-size:34px;
+
+}
+
+nav ul{
+
+display:flex;
+list-style:none;
+gap:35px;
+
+}
+
+nav a{
+
+color:var(--primary);
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+nav a:hover,
+nav a.active{
+
+color:var(--secondary);
+
+}
+
+/* ==========================
+BUTTON
+========================== */
+
+.btn{
+
+display:inline-block;
+
+background:var(--secondary);
+
+color:white;
+
+text-decoration:none;
+
+padding:16px 34px;
+
+border-radius:40px;
+
+font-weight:600;
+
+transition:.35s;
+
+}
+
+.btn:hover{
+
+background:var(--secondary-dark);
+
+transform:translateY(-3px);
+
+box-shadow:0 15px 30px rgba(0,0,0,.15);
+
+}
+
+/* ==========================
+HERO
+========================== */
+
+.hero{
+
+height:100vh;
+
+background:
+linear-gradient(rgba(0,0,0,.35),
+rgba(0,0,0,.35)),
+url("images/hero.jpg") center/cover no-repeat;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+}
+
+.hero-content{
+
+max-width:850px;
+
+color:white;
+
+}
+
+.hero h1{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:72px;
+
+margin-bottom:25px;
+
+}
+
+.hero p{
+
+font-size:24px;
+
+margin-bottom:35px;
+
+}
+
+/* Hero Animation */
+
+.fadeHero{
+
+animation:fadeHero 1.3s ease forwards;
+
+}
+
+@keyframes fadeHero{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* Scroll Animation */
+
+.hidden{
+
+opacity:0;
+
+transform:translateY(50px);
+
+transition:.9s ease;
+
+}
+
+.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+/* Sections */
+
+section{
+
+padding:120px 0;
+
+}
+
+section h2{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:52px;
+
+color:var(--primary);
+
+text-align:center;
+
+margin-bottom:25px;
+
+}
+
+section h2::after{
+
+content:"";
+
+display:block;
+
+width:90px;
+
+height:4px;
+
+background:var(--secondary);
+
+margin:18px auto;
+
+border-radius:20px;
+
+}
