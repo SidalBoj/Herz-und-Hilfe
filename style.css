@@ -133,16 +133,25 @@ header .container{
 
 
 /* ==========================
-   LOGO
+   LOGO LINK
 ========================== */
+
+a.logo,
+a.logo:link,
+a.logo:visited,
+a.logo:hover,
+a.logo:active{
+
+    text-decoration:none !important;
+    color:var(--primary);
+
+}
 
 
 .logo{
 
     display:flex;
-
     align-items:center;
-
     gap:12px;
 
 }
@@ -151,15 +160,14 @@ header .container{
 .logo img{
 
     width:52px;
+    height:auto;
 
 }
 
 
 .logo h2{
 
-    font-family:
-    "Cormorant Garamond",
-    serif;
+    font-family:"Cormorant Garamond",serif;
 
     color:var(--primary);
 
@@ -167,40 +175,22 @@ header .container{
 
     line-height:1;
 
+    text-decoration:none !important;
+
 }
+
 
 .logo span{
 
     display:block;
 
-    font-size:13px;
-
     color:var(--secondary-dark);
 
-    letter-spacing:.5px;
+    font-size:13px;
+
+    text-decoration:none !important;
 
 }
-
-/* Logo-Link ohne Unterstreichung */
-
-.logo{
-    text-decoration:none;
-    color:inherit;
-}
-
-.logo:link,
-.logo:visited,
-.logo:hover,
-.logo:active{
-    text-decoration:none;
-    color:inherit;
-}
-
-.logo h2,
-.logo span{
-    text-decoration:none;
-}
-
 
 /* ==========================
    NAVIGATION
