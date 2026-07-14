@@ -135,9 +135,6 @@ header .container{
 /* ==========================
    LOGO
 ========================== */
-/* ==========================
-   LOGO
-========================== */
 
 
 .logo{
@@ -184,6 +181,25 @@ header .container{
 
 }
 
+/* Logo-Link ohne Unterstreichung */
+
+.logo{
+    text-decoration:none;
+    color:inherit;
+}
+
+.logo:link,
+.logo:visited,
+.logo:hover,
+.logo:active{
+    text-decoration:none;
+    color:inherit;
+}
+
+.logo h2,
+.logo span{
+    text-decoration:none;
+}
 
 
 /* ==========================
