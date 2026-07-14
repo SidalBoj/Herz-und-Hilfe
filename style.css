@@ -1,0 +1,1492 @@
+/* ===================================
+   HERZ & HILFE
+   Pflegevermittlung
+   Premium Responsive Design
+=================================== */
+
+
+/* ==========================
+   GOOGLE FONTS
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+
+/* ==========================
+   FARBEN
+========================== */
+
+:root{
+
+    --primary:#1F3A5F;
+    --secondary:#A8C3A1;
+    --secondary-dark:#7E9B76;
+    --secondary-light:#DDE8D8;
+
+    --background:#FAF8F5;
+    --white:#ffffff;
+    --light:#F3F0EC;
+
+    --text:#444444;
+
+    --shadow:
+    0 12px 35px rgba(0,0,0,.08);
+
+}
+
+
+/* ==========================
+   RESET
+========================== */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+body{
+
+    font-family:"Inter",sans-serif;
+
+    background:var(--background);
+
+    color:var(--text);
+
+    line-height:1.7;
+
+}
+
+
+/* ==========================
+   CONTAINER
+========================== */
+
+.container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+
+
+/* ==========================
+   HEADER
+========================== */
+
+header{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    background:rgba(255,255,255,.92);
+
+    backdrop-filter:blur(12px);
+
+    z-index:1000;
+
+    transition:.35s ease;
+
+}
+
+
+header.scrolled{
+
+    box-shadow:var(--shadow);
+
+    background:rgba(255,255,255,.98);
+
+}
+
+
+
+header .container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:10px 0;
+
+}
+
+
+
+/* ==========================
+   LOGO
+========================== */
+
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+
+.logo img{
+
+    width:52px;
+
+    height:auto;
+
+}
+
+
+
+.logo h2{
+
+    font-family:
+    "Cormorant Garamond",
+    serif;
+
+    color:var(--primary);
+
+    font-size:30px;
+
+    line-height:1;
+
+}
+
+
+.logo span{
+
+    display:block;
+
+    font-size:13px;
+
+    color:var(--secondary-dark);
+
+    letter-spacing:.5px;
+
+}
+
+
+
+/* ==========================
+   NAVIGATION
+========================== */
+
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:32px;
+
+}
+
+
+nav a{
+
+    text-decoration:none;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+
+nav a:hover,
+nav a.active{
+
+    color:var(--secondary-dark);
+
+}
+
+
+
+/* ==========================
+   HERO
+========================== */
+
+
+.hero{
+
+    min-height:100vh;
+
+    padding-top:90px;
+
+
+    background:
+
+    linear-gradient(
+    rgba(0,0,0,.38),
+    rgba(0,0,0,.38)
+    ),
+
+    url("images/hero.jpg")
+
+    center center / cover no-repeat;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+}
+
+
+
+.hero-content{
+
+    max-width:850px;
+
+    color:white;
+
+    padding:20px;
+
+}
+
+
+
+.hero h1{
+
+    font-family:
+    "Cormorant Garamond",
+    serif;
+
+
+    font-size:
+    clamp(42px,6vw,68px);
+
+
+    font-weight:700;
+
+
+    line-height:1.1;
+
+
+    margin-bottom:25px;
+
+}
+
+
+
+.hero p{
+
+    font-size:
+    clamp(18px,2vw,23px);
+
+
+    line-height:1.6;
+
+
+    margin-bottom:35px;
+
+}
+
+
+
+/* ==========================
+   BUTTON
+========================== */
+
+
+.btn{
+
+    display:inline-block;
+
+    background:var(--secondary);
+
+    color:white;
+
+    text-decoration:none;
+
+
+    padding:15px 35px;
+
+
+    border-radius:40px;
+
+
+    font-weight:600;
+
+
+    transition:.35s ease;
+
+}
+
+
+
+.btn:hover{
+
+    background:var(--secondary-dark);
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 15px 30px rgba(0,0,0,.15);
+
+}
+
+
+
+/* ==========================
+   ANIMATION HERO
+========================== */
+
+
+.fadeHero{
+
+    animation:
+    fadeHero 1.2s ease forwards;
+
+}
+
+
+
+@keyframes fadeHero{
+
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================
+   SEKTIONEN
+========================== */
+
+
+section{
+
+    padding:110px 0;
+
+}
+
+
+
+section h2{
+
+    font-family:
+    "Cormorant Garamond",
+    serif;
+
+
+    font-size:
+    clamp(38px,5vw,52px);
+
+
+    color:var(--primary);
+
+
+    text-align:center;
+
+
+    margin-bottom:25px;
+
+}
+
+
+
+section h2::after{
+
+    content:"";
+
+
+    display:block;
+
+
+    width:90px;
+
+
+    height:4px;
+
+
+    background:var(--secondary);
+
+
+    margin:18px auto;
+
+
+    border-radius:20px;
+
+}
+
+
+
+/* ==========================
+   EINLEITUNGSTEXTE
+========================== */
+
+
+.intro{
+
+    max-width:850px;
+
+
+    margin:0 auto 50px;
+
+
+    text-align:center;
+
+
+    font-size:18px;
+
+
+    color:#555;
+
+
+}
+
+
+
+/* ==========================
+   KARTEN
+========================== */
+
+
+.cards{
+
+    display:grid;
+
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+
+    gap:30px;
+
+}
+
+
+
+.card{
+
+    background:var(--white);
+
+
+    padding:35px 25px;
+
+
+    text-align:center;
+
+
+    border-radius:18px;
+
+
+    box-shadow:var(--shadow);
+
+
+    transition:.35s ease;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.card i{
+
+    font-size:38px;
+
+
+    color:var(--secondary-dark);
+
+
+    margin-bottom:20px;
+
+}
+
+
+
+.card h3{
+
+    font-family:
+    "Cormorant Garamond",
+    serif;
+
+
+    color:var(--primary);
+
+
+    font-size:28px;
+
+
+    margin-bottom:15px;
+
+}
+
+
+
+.card p{
+
+    font-size:16px;
+
+}
+
+
+
+/* ==========================
+   WERTE
+========================== */
+
+
+.values{
+
+    background:var(--light);
+
+}
+
+
+
+.grid{
+
+    display:grid;
+
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+
+    gap:30px;
+
+}
+
+
+
+.grid > div{
+
+    text-align:center;
+
+
+    padding:30px;
+
+}
+
+
+
+.grid i{
+
+    font-size:40px;
+
+
+    color:var(--secondary-dark);
+
+
+    margin-bottom:20px;
+
+}
+
+
+
+.grid h3{
+
+    font-family:
+    "Cormorant Garamond",
+    serif;
+
+
+    color:var(--primary);
+
+
+    font-size:28px;
+
+
+    margin-bottom:15px;
+
+}
+
+
+
+/* ==========================
+   ABLAUF
+========================== */
+
+
+.steps{
+
+    max-width:850px;
+
+
+    margin:auto;
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    gap:25px;
+
+}
+
+
+
+.step{
+
+    display:flex;
+
+
+    align-items:flex-start;
+
+
+    gap:25px;
+
+
+    background:white;
+
+
+    padding:30px;
+
+
+    border-radius:18px;
+
+
+    box-shadow:var(--shadow);
+
+}
+
+
+
+.step span{
+
+    min-width:65px;
+
+
+    height:65px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    border-radius:50%;
+
+
+    background:var(--secondary);
+
+
+    color:white;
+
+
+    font-size:22px;
+
+
+    font-weight:700;
+
+}
+
+
+
+.step h3{
+
+    font-family:
+    "Cormorant Garamond",
+    serif;
+
+
+    font-size:30px;
+
+
+    color:var(--primary);
+
+
+    margin-bottom:8px;
+
+}
+
+
+
+.step p{
+
+    color:#555;
+
+}
+
+
+
+/* ==========================
+   SCROLL ANIMATION
+========================== */
+
+
+.hidden{
+
+    opacity:0;
+
+
+    transform:translateY(40px);
+
+
+    transition:
+    .8s ease;
+
+}
+
+
+
+.show{
+
+    opacity:1;
+
+
+    transform:translateY(0);
+
+}
+
+/* ==========================
+   BERATUNG / KONTAKT
+========================== */
+
+
+.contact{
+
+    background:
+    linear-gradient(
+    135deg,
+    var(--secondary-light),
+    #ffffff
+    );
+
+}
+
+
+
+.contact-box{
+
+    max-width:650px;
+
+
+    margin:40px auto 0;
+
+
+    background:white;
+
+
+    padding:45px;
+
+
+    border-radius:20px;
+
+
+    text-align:center;
+
+
+    box-shadow:var(--shadow);
+
+}
+
+
+
+.contact-box p{
+
+    font-size:18px;
+
+
+    margin-bottom:15px;
+
+}
+
+
+
+.contact-box strong{
+
+    display:block;
+
+
+    font-family:
+    "Cormorant Garamond",
+    serif;
+
+
+    color:var(--primary);
+
+
+    font-size:32px;
+
+
+    margin-bottom:20px;
+
+}
+
+
+
+.contact-box .btn{
+
+    margin-top:25px;
+
+}
+
+
+
+/* ==========================
+   FOOTER
+========================== */
+
+
+footer{
+
+    background:var(--primary);
+
+
+    color:white;
+
+
+    padding:35px 0;
+
+
+    text-align:center;
+
+}
+
+
+
+footer p{
+
+    font-size:15px;
+
+
+    opacity:.9;
+
+}
+
+
+
+/* ==========================
+   ZUSÄTZLICHE DESIGN DETAILS
+========================== */
+
+
+::selection{
+
+    background:var(--secondary);
+
+
+    color:white;
+
+}
+
+
+
+/* Sanfte Übergänge für Links */
+
+a{
+
+    transition:.3s ease;
+
+}
+
+
+
+/* Bilder generell sauber darstellen */
+
+
+img{
+
+    max-width:100%;
+
+
+    display:block;
+
+}
+
+
+
+/* Abstand nach fixiertem Header */
+
+
+#philosophie,
+#leistungen,
+#ablauf,
+#beratung{
+
+    scroll-margin-top:90px;
+
+}
+
+
+
+/* ==========================
+   SCHATTEN-EFFEKT KARTEN
+========================== */
+
+
+.card,
+.step,
+.contact-box{
+
+    border:1px solid rgba(0,0,0,.03);
+
+}
+
+
+
+/* ==========================
+   HOVER EFFEKTE
+========================== */
+
+
+.grid > div{
+
+    transition:.35s ease;
+
+}
+
+
+
+.grid > div:hover{
+
+    transform:translateY(-6px);
+
+}
+
+
+
+/* ==========================
+   ZUSÄTZLICHE TRENNBEREICHE
+========================== */
+
+
+.values .container{
+
+    position:relative;
+
+}
+
+
+
+.values .grid{
+
+    margin-top:40px;
+
+}
+
+
+
+/* ==========================
+   BUTTON FEINSCHLIFF
+========================== */
+
+
+.btn{
+
+    letter-spacing:.3px;
+
+}
+
+
+
+.btn:active{
+
+    transform:scale(.97);
+
+}
+
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
+
+
+/* ==========================
+   TABLET
+   bis 1024px
+========================== */
+
+
+@media(max-width:1024px){
+
+
+    header .container{
+
+        padding:12px 0;
+
+    }
+
+
+
+    nav ul{
+
+        gap:20px;
+
+    }
+
+
+
+    nav a{
+
+        font-size:14px;
+
+    }
+
+
+
+    .cards{
+
+        grid-template-columns:
+        repeat(2,1fr);
+
+    }
+
+
+
+    .grid{
+
+        grid-template-columns:
+        repeat(2,1fr);
+
+    }
+
+
+
+    .hero h1{
+
+        font-size:52px;
+
+    }
+
+
+
+    .hero p{
+
+        font-size:20px;
+
+    }
+
+
+
+}
+
+
+
+/* ==========================
+   SMARTPHONE
+   bis 768px
+========================== */
+
+
+@media(max-width:768px){
+
+
+
+    .container{
+
+        width:92%;
+
+    }
+
+
+
+    /* HEADER */
+
+
+    header .container{
+
+        flex-direction:column;
+
+
+        gap:15px;
+
+    }
+
+
+
+    .logo{
+
+        justify-content:center;
+
+    }
+
+
+
+    .logo h2{
+
+        font-size:26px;
+
+    }
+
+
+
+    nav ul{
+
+        flex-wrap:wrap;
+
+
+        justify-content:center;
+
+
+        gap:15px;
+
+    }
+
+
+
+    nav a{
+
+        font-size:13px;
+
+    }
+
+
+
+
+
+    /* HERO */
+
+
+    .hero{
+
+        min-height:100vh;
+
+
+        padding-top:130px;
+
+    }
+
+
+
+    .hero-content{
+
+        padding:15px;
+
+    }
+
+
+
+    .hero h1{
+
+        font-size:42px;
+
+
+        line-height:1.15;
+
+    }
+
+
+
+    .hero p{
+
+        font-size:17px;
+
+
+        line-height:1.6;
+
+    }
+
+
+
+    .btn{
+
+        padding:14px 28px;
+
+    }
+
+
+
+
+
+    /* SEKTIONEN */
+
+
+    section{
+
+        padding:75px 0;
+
+    }
+
+
+
+    section h2{
+
+        font-size:38px;
+
+    }
+
+
+
+    .intro{
+
+        font-size:16px;
+
+    }
+
+
+
+
+
+    /* KARTEN */
+
+
+    .cards{
+
+        grid-template-columns:
+        1fr;
+
+
+        gap:20px;
+
+    }
+
+
+
+    .card{
+
+        padding:30px 20px;
+
+    }
+
+
+
+
+
+    /* WERTE */
+
+
+    .grid{
+
+        grid-template-columns:
+        1fr;
+
+    }
+
+
+
+    .grid > div{
+
+        padding:20px;
+
+    }
+
+
+
+
+
+    /* ABLAUF */
+
+
+    .step{
+
+        flex-direction:column;
+
+
+        text-align:center;
+
+
+        align-items:center;
+
+    }
+
+
+
+    .step span{
+
+        width:60px;
+
+
+        height:60px;
+
+    }
+
+
+
+    .step h3{
+
+        font-size:26px;
+
+    }
+
+
+
+
+
+    /* KONTAKT */
+
+
+    .contact-box{
+
+        padding:30px 20px;
+
+    }
+
+
+
+    .contact-box strong{
+
+        font-size:28px;
+
+    }
+
+
+
+}
+
+
+
+/* ==========================
+   KLEINE SMARTPHONES
+   bis 480px
+========================== */
+
+
+@media(max-width:480px){
+
+
+
+    .logo img{
+
+        width:45px;
+
+    }
+
+
+
+    .logo h2{
+
+        font-size:23px;
+
+    }
+
+
+
+    .logo span{
+
+        font-size:12px;
+
+    }
+
+
+
+    nav ul{
+
+        gap:10px;
+
+    }
+
+
+
+    nav a{
+
+        font-size:12px;
+
+    }
+
+
+
+    .hero h1{
+
+        font-size:36px;
+
+    }
+
+
+
+    .hero p{
+
+        font-size:16px;
+
+    }
+
+
+
+    .hero .btn{
+
+        width:100%;
+
+    }
+
+
+
+    section h2{
+
+        font-size:34px;
+
+    }
+
+
+
+    .card h3{
+
+        font-size:25px;
+
+    }
+
+
+
+}
+
+
+
+/* ==========================
+   REDUZIERTE ANIMATIONEN
+   für Nutzer mit
+   Bewegungseinschränkung
+========================== */
+
+
+@media(prefers-reduced-motion:reduce){
+
+
+    *,
+    *::before,
+    *::after{
+
+        animation-duration:.01ms !important;
+
+        transition-duration:.01ms !important;
+
+    }
+
+
+}
