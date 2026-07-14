@@ -1493,5 +1493,17 @@ img{
 
     }
 
+/* Entfernt Unterstreichung vom Logo endgültig */
 
+header a.logo,
+header a.logo *,
+header a.logo:hover,
+header a.logo:visited,
+header a.logo:active{
+
+    text-decoration:none !important;
+    border-bottom:none !important;
+    box-shadow:none !important;
+
+}
 }
