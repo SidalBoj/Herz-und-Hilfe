@@ -135,6 +135,9 @@ header .container{
 /* ==========================
    LOGO
 ========================== */
+/* ==========================
+   LOGO
+========================== */
 
 
 .logo{
@@ -152,10 +155,7 @@ header .container{
 
     width:52px;
 
-    height:auto;
-
 }
-
 
 
 .logo h2{
@@ -171,7 +171,6 @@ header .container{
     line-height:1;
 
 }
-
 
 .logo span{
 
