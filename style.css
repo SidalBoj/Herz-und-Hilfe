@@ -126,7 +126,9 @@ header .container{
 
     align-items:center;
 
-    padding:10px 0;
+    padding:8px 0;
+
+    min-height:125px;
 
 }
 
@@ -155,7 +157,7 @@ a.logo:active{
 }
 
 .logo img{
-    width:220px;
+    width:180px;
     height:auto;
     display:block;
 }
@@ -209,7 +211,7 @@ nav a.active{
 
     min-height:100vh;
 
-    padding-top:90px;
+    padding-top:140px;
 
 
     background:
